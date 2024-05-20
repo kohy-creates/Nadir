@@ -1,75 +1,75 @@
 {
-  "anvil_cost": 2,
-  "description": {
-    "translate": "enchantment.minecraft.unbreaking"
-  },
-  "effects": {
-    "minecraft:item_damage": [
-      {
-        "effect": {
-          "type": "minecraft:remove_binomial",
-          "chance": {
-            "type": "minecraft:fraction",
-            "denominator": {
-              "type": "minecraft:linear",
-              "base": 10.0,
-              "per_level_above_first": 5.0
-            },
-            "numerator": {
-              "type": "minecraft:linear",
-              "base": 2.0,
-              "per_level_above_first": 2.0
-            }
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "items": "#minecraft:enchantable/armor"
-          }
-        }
-      },
-      {
-        "effect": {
-          "type": "minecraft:remove_binomial",
-          "chance": {
-            "type": "minecraft:fraction",
-            "denominator": {
-              "type": "minecraft:linear",
-              "base": 2.0,
-              "per_level_above_first": 1.0
-            },
-            "numerator": {
-              "type": "minecraft:linear",
-              "base": 1.0,
-              "per_level_above_first": 1.0
-            }
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:match_tool",
-            "predicate": {
-              "items": "#minecraft:enchantable/armor"
-            }
-          }
-        }
-      }
-    ]
-  },
-  "max_cost": {
-    "base": 55,
-    "per_level_above_first": 8
-  },
-  "max_level": 3,
-  "min_cost": {
-    "base": 5,
-    "per_level_above_first": 8
-  },
-  "slots": [
-    "any"
-  ],
-  "supported_items": "#minecraft:enchantable/durability",
-  "weight": 5
+	"description": {
+		"translate": "enchantment.minecraft.unbreaking"
+	},
+	"supported_items": "#minecraft:enchantable/durability",
+	"weight": 5,
+	"max_level": 5,
+	"min_cost": {
+		"base": 7,
+		"per_level_above_first": 9
+	},
+	"max_cost": {
+		"base": 55,
+		"per_level_above_first": 8
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"any"
+	],
+	"effects": {
+		"minecraft:item_damage": [
+			{
+				"effect": {
+					"type": "minecraft:remove_binomial",
+					"chance": {
+						"type": "minecraft:fraction",
+						"numerator": {
+							"type": "minecraft:linear",
+							"base": 2,
+							"per_level_above_first": 2
+						},
+						"denominator": {
+							"type": "minecraft:linear",
+							"base": 8,
+							"per_level_above_first": 4
+						}
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"items": "#minecraft:enchantable/armor"
+					}
+				}
+			},
+			{
+				"effect": {
+					"type": "minecraft:remove_binomial",
+					"chance": {
+						"type": "minecraft:fraction",
+						"numerator": {
+							"type": "minecraft:linear",
+							"base": 1,
+							"per_level_above_first": 1
+						},
+						"denominator": {
+							"type": "minecraft:linear",
+							"base": 3,
+							"per_level_above_first": 1
+						}
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": "#minecraft:enchantable/armor"
+						}
+					}
+				}
+			}
+		]
+	}
 }

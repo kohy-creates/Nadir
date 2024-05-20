@@ -3,7 +3,6 @@
 		"#minecraft:non_treasure",
 		"minecraft:binding_curse",
 		"minecraft:vanishing_curse",
-		"minecraft:frost_walker",
-		"minecraft:mending"
+		"minecraft:frost_walker"
 	]
 }

@@ -37,6 +37,7 @@
 		"minecraft:breach",
 		"nadir:illagers_bane",
 		"nadir:familiarity",
-		"nadir:magic_protection"
+		"nadir:magic_protection",
+		"minecraft:mending"
 	]
 }
