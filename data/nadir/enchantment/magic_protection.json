@@ -1,6 +1,7 @@
 {
 	"description": {
-		"translate": "enchantment.minecraft.projectile_protection"
+		"translate": "enchantment.nadir.magic_protection",
+		"fallback": "Magic Protection"
 	},
 	"supported_items": "#minecraft:enchantable/armor",
 	"weight": 3,
@@ -33,7 +34,7 @@
 					"predicate": {
 						"tags": [
 							{
-								"id": "minecraft:is_projectile",
+								"id": "nadir:is_magic",
 								"expected": true
 							},
 							{

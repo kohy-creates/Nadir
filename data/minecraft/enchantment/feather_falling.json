@@ -1,49 +1,46 @@
 {
-  "anvil_cost": 2,
-  "description": {
-    "translate": "enchantment.minecraft.feather_falling"
-  },
-  "effects": {
-    "minecraft:damage_protection": [
-      {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 3.0,
-            "per_level_above_first": 3.0
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:damage_source_properties",
-          "predicate": {
-            "tags": [
-              {
-                "expected": true,
-                "id": "minecraft:is_fall"
-              },
-              {
-                "expected": false,
-                "id": "minecraft:bypasses_invulnerability"
-              }
-            ]
-          }
-        }
-      }
-    ]
-  },
-  "max_cost": {
-    "base": 11,
-    "per_level_above_first": 6
-  },
-  "max_level": 4,
-  "min_cost": {
-    "base": 5,
-    "per_level_above_first": 6
-  },
-  "slots": [
-    "armor"
-  ],
-  "supported_items": "#minecraft:enchantable/foot_armor",
-  "weight": 5
+	"description": {
+		"translate": "enchantment.minecraft.feather_falling"
+	},
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"weight": 5,
+	"max_level": 4,
+	"min_cost": {
+		"base": 5,
+		"per_level_above_first": 6
+	},
+	"max_cost": {
+		"base": 11,
+		"per_level_above_first": 6
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"name": "enchantment.feather_falling",
+				"attribute": "minecraft:generic.fall_damage_multiplier",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": -0.1,
+					"per_level_above_first": -0.1
+				},
+				"operation": "add_multiplied_base",
+				"uuid": "7a898331-51bd-474a-a238-a523d827c59c"
+			},
+			{
+				"name": "enchantment.feather_falling",
+				"attribute": "minecraft:generic.safe_fall_distance",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 2,
+					"per_level_above_first": 2
+				},
+				"operation": "add_value",
+				"uuid": "7a898331-51bd-474a-a238-a523d827c59c"
+			}
+		]
+	}
 }

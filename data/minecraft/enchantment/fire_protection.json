@@ -1,68 +1,67 @@
 {
-  "anvil_cost": 2,
-  "description": {
-    "translate": "enchantment.minecraft.fire_protection"
-  },
-  "effects": {
-    "minecraft:attributes": [
-      {
-        "amount": {
-          "type": "minecraft:linear",
-          "base": -0.15,
-          "per_level_above_first": -0.15
-        },
-        "attribute": "minecraft:generic.burning_time",
-        "name": "enchantment.fire_protection",
-        "operation": "add_multiplied_base",
-        "uuid": "b572ecd2-ac0c-4071-abde-9594af072a37"
-      }
-    ],
-    "minecraft:damage_protection": [
-      {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 2.0,
-            "per_level_above_first": 2.0
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:all_of",
-          "terms": [
-            {
-              "condition": "minecraft:damage_source_properties",
-              "predicate": {
-                "tags": [
-                  {
-                    "expected": true,
-                    "id": "minecraft:is_fire"
-                  },
-                  {
-                    "expected": false,
-                    "id": "minecraft:bypasses_invulnerability"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      }
-    ]
-  },
-  "exclusive_set": "#minecraft:exclusive_set/armor",
-  "max_cost": {
-    "base": 18,
-    "per_level_above_first": 8
-  },
-  "max_level": 4,
-  "min_cost": {
-    "base": 10,
-    "per_level_above_first": 8
-  },
-  "slots": [
-    "armor"
-  ],
-  "supported_items": "#minecraft:enchantable/armor",
-  "weight": 5
+	"description": {
+		"translate": "enchantment.minecraft.fire_protection"
+	},
+	"supported_items": "#minecraft:enchantable/armor",
+	"weight": 4,
+	"max_level": 4,
+	"min_cost": {
+		"base": 10,
+		"per_level_above_first": 8
+	},
+	"max_cost": {
+		"base": 18,
+		"per_level_above_first": 8
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"name": "enchantment.fire_protection",
+				"attribute": "minecraft:generic.burning_time",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": -0.15,
+					"per_level_above_first": -0.15
+				},
+				"operation": "add_multiplied_base",
+				"uuid": "b572ecd2-ac0c-4071-abde-9594af072a37"
+			}
+		],
+		"minecraft:damage_protection": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 1,
+						"per_level_above_first": 1
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:damage_source_properties",
+							"predicate": {
+								"tags": [
+									{
+										"id": "minecraft:is_fire",
+										"expected": true
+									},
+									{
+										"id": "minecraft:bypasses_invulnerability",
+										"expected": false
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	}
 }

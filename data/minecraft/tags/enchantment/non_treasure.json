@@ -36,6 +36,7 @@
 		"minecraft:density",
 		"minecraft:breach",
 		"nadir:illagers_bane",
-		"nadir:familiarity"
+		"nadir:familiarity",
+		"nadir:magic_protection"
 	]
 }
