@@ -1,37 +1,43 @@
 {
-  "anvil_cost": 8,
-  "description": {
-    "translate": "enchantment.minecraft.infinity"
-  },
-  "effects": {
-    "minecraft:ammo_use": [
-      {
-        "effect": {
-          "type": "minecraft:set",
-          "value": 0.0
-        },
-        "requirements": {
-          "condition": "minecraft:match_tool",
-          "predicate": {
-            "items": "minecraft:arrow"
-          }
-        }
-      }
-    ]
-  },
-  "exclusive_set": "#minecraft:exclusive_set/bow",
-  "max_cost": {
-    "base": 50,
-    "per_level_above_first": 0
-  },
-  "max_level": 1,
-  "min_cost": {
-    "base": 20,
-    "per_level_above_first": 0
-  },
-  "slots": [
-    "mainhand"
-  ],
-  "supported_items": "#minecraft:enchantable/bow",
-  "weight": 1
+	"description": {
+		"translate": "enchantment.minecraft.infinity"
+	},
+	"supported_items": "#nadir:enchantable/ranged",
+	"weight": 1,
+	"max_level": 3,
+	"min_cost": {
+		"base": 18,
+		"per_level_above_first": 12
+	},
+	"max_cost": {
+		"base": 41,
+		"per_level_above_first": 12
+	},
+	"anvil_cost": 4,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:ammo_use": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:remove_binomial",
+							"chance": {
+								"type": "minecraft:fraction",
+								"numerator": {
+									"type": "minecraft:linear",
+									"base": 24,
+									"per_level_above_first": 12
+								},
+								"denominator": 100
+							}
+						}
+					]
+				}
+			}
+		]
+	}
 }

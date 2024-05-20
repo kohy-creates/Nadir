@@ -1,10 +1,13 @@
 {
+	"replace": true,
 	"values": [
 		"minecraft:binding_curse",
 		"minecraft:vanishing_curse",
 		"minecraft:swift_sneak",
 		"minecraft:soul_speed",
 		"minecraft:frost_walker",
-		"minecraft:wind_burst"
+		"minecraft:wind_burst",
+		"minecraft:multishot",
+		"nadir:endless_quiver"
 	]
 }

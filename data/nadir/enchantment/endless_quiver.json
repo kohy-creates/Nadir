@@ -1,0 +1,32 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.endless_quiver",
+		"fallback": "Endless Quiver"
+	},
+	"exclusive_set": "#nadir:exclusive_set/infinity",
+	"supported_items": "#nadir:enchantable/ranged",
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 25
+	},
+	"max_cost": {
+		"base": 75,
+		"per_level_above_first": 25
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:ammo_use": [
+			{
+				"effect": {
+					"type": "minecraft:set",
+					"value": 0
+				}
+			}
+		]
+	}
+}

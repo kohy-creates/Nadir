@@ -1,47 +1,72 @@
 {
-  "anvil_cost": 4,
-  "description": {
-    "translate": "enchantment.minecraft.multishot"
-  },
-  "effects": {
-    "minecraft:projectile_count": [
-      {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 2.0,
-            "per_level_above_first": 2.0
-          }
-        }
-      }
-    ],
-    "minecraft:projectile_spread": [
-      {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 10.0,
-            "per_level_above_first": 10.0
-          }
-        }
-      }
-    ]
-  },
-  "exclusive_set": "#minecraft:exclusive_set/crossbow",
-  "max_cost": {
-    "base": 50,
-    "per_level_above_first": 0
-  },
-  "max_level": 1,
-  "min_cost": {
-    "base": 20,
-    "per_level_above_first": 0
-  },
-  "slots": [
-    "mainhand"
-  ],
-  "supported_items": "#minecraft:enchantable/crossbow",
-  "weight": 2
+	"description": {
+		"translate": "enchantment.minecraft.multishot"
+	},
+	"exclusive_set": "#minecraft:exclusive_set/crossbow",
+	"supported_items": "#nadir:enchantable/ranged",
+	"weight": 2,
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 25
+	},
+	"max_cost": {
+		"base": 75,
+		"per_level_above_first": 25
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:projectile_count": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": 2,
+						"per_level_above_first": 2
+					}
+				}
+			}
+		],
+		"minecraft:projectile_spread": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:add",
+							"value": {
+								"type": "minecraft:linear",
+								"base": 25,
+								"per_level_above_first": 15
+							}
+						},
+						{
+							"type": "minecraft:remove_binomial",
+							"chance": {
+								"type": "minecraft:fraction",
+								"numerator": 1,
+								"denominator": 2
+							}
+						},
+						{
+							"type": "minecraft:multiply",
+							"factor": {
+								"type": "minecraft:fraction",
+								"numerator": 1,
+								"denominator": 3
+							}
+						},
+						{
+							"type": "minecraft:multiply",
+							"factor": 1.1
+						}
+					]
+				}
+			}
+		]
+	}
 }

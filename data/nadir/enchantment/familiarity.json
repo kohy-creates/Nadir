@@ -3,7 +3,7 @@
 		"translate": "enchantment.nadir.familiarity",
 		"fallback": "Familiarity"
 	},
-	"supported_items": "#minecraft:enchantable/weapon",
+	"supported_items": "#nadir:enchantable/every_weapon",
 	"weight": 2,
 	"max_level": 1,
 	"min_cost": {
