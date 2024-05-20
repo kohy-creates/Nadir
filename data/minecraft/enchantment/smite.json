@@ -1,43 +1,69 @@
 {
-  "anvil_cost": 2,
-  "description": {
-    "translate": "enchantment.minecraft.smite"
-  },
-  "effects": {
-    "minecraft:damage": [
-      {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 2.5,
-            "per_level_above_first": 2.5
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type": "#minecraft:sensitive_to_smite"
-          }
-        }
-      }
-    ]
-  },
-  "exclusive_set": "#minecraft:exclusive_set/damage",
-  "max_cost": {
-    "base": 25,
-    "per_level_above_first": 8
-  },
-  "max_level": 5,
-  "min_cost": {
-    "base": 5,
-    "per_level_above_first": 8
-  },
-  "primary_items": "#minecraft:enchantable/sword",
-  "slots": [
-    "mainhand"
-  ],
-  "supported_items": "#minecraft:enchantable/weapon",
-  "weight": 5
+	"description": {
+		"translate": "enchantment.minecraft.smite"
+	},
+	"supported_items": "#minecraft:enchantable/weapon",
+	"weight": 5,
+	"max_level": 5,
+	"min_cost": {
+		"base": 5,
+		"per_level_above_first": 8
+	},
+	"max_cost": {
+		"base": 25,
+		"per_level_above_first": 8
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:damage": [
+			{
+				"effect": {
+					"type": "minecraft:multiply",
+					"factor": {
+						"type": "minecraft:linear",
+						"base": 1.2,
+						"per_level_above_first": 0.1
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"type": "#minecraft:sensitive_to_smite"
+					}
+				}
+			}
+		],
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:raid_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"type": "#minecraft:sensitive_to_smite"
+					}
+				}
+			}
+		]
+	}
 }
