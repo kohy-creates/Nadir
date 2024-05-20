@@ -1,6 +1,6 @@
 {
-  "values": [
-    "minecraft:fortune",
-    "minecraft:silk_touch"
-  ]
+	"values": [
+		"minecraft:fortune",
+		"minecraft:silk_touch"
+	]
 }
