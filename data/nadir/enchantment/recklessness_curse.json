@@ -7,10 +7,10 @@
 		"minecraft:feather_falling"
 	],
 	"supported_items": "#minecraft:enchantable/foot_armor",
-	"weight": 5,
+	"weight": 4,
 	"max_level": 1,
 	"min_cost": {
-		"base": 25,
+		"base": 15,
 		"per_level_above_first": 0
 	},
 	"max_cost": {

@@ -5,7 +5,6 @@
 		"color": "gold"
 	},
 	"exclusive_set": [
-		"minecraft:channeling",
 		"minecraft:riptide",
 		"minecraft:loyalty"
 	],
