@@ -1,0 +1,35 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.exhaustion_curse",
+		"fallback": "Curse of Exhaustion"
+	},
+	"exclusive_set": [
+		"nadir:enlargement_curse"
+	],
+	"supported_items": "#minecraft:enchantable/mining",
+	"weight": 5,
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"name": "enchantment.exhaustion_curse",
+				"attribute": "minecraft:player.block_break_speed",
+				"amount": -0.25,
+				"operation": "add_multiplied_total",
+				"uuid": "ae982faa-6beb-4a60-b3ed-10e735fe5c42"
+			}
+		]
+	}
+}

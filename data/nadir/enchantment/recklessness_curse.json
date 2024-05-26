@@ -1,0 +1,35 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.recklessness_curse",
+		"fallback": "Curse of Recklessness"
+	},
+	"exclusive_set": [
+		"minecraft:feather_falling"
+	],
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"weight": 5,
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"name": "enchantment.recklessness_curse",
+				"attribute": "minecraft:generic.fall_damage_multiplier",
+				"amount": 0.40,
+				"operation": "add_multiplied_total",
+				"uuid": "ae982faa-6beb-4a60-b3ed-10e735fe5c42"
+			}
+		]
+	}
+}
