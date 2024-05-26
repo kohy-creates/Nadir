@@ -1,6 +1,12 @@
 {
 	"values": [
 		"minecraft:binding_curse",
-		"minecraft:vanishing_curse"
+		"minecraft:vanishing_curse",
+		"nadir:enlargement_curse",
+		"nadir:anti_entropy_curse",
+		"nadir:bulk_curse",
+		"nadir:recklessness_curse",
+		"nadir:exhaustion_curse",
+		"nadir:fragility_curse"
 	]
 }

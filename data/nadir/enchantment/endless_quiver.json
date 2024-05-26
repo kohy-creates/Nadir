@@ -1,7 +1,8 @@
 {
 	"description": {
 		"translate": "enchantment.nadir.endless_quiver",
-		"fallback": "Endless Quiver"
+		"fallback": "Endless Quiver",
+		"color": "gold"
 	},
 	"exclusive_set": "#nadir:exclusive_set/infinity",
 	"supported_items": "#nadir:enchantable/ranged",

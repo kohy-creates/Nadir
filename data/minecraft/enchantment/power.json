@@ -3,7 +3,7 @@
 		"translate": "enchantment.minecraft.power"
 	},
 	"supported_items": "#nadir:enchantable/ranged",
-	"weight": 10,
+	"weight": 9,
 	"max_level": 5,
 	"min_cost": {
 		"base": 1,

@@ -1,7 +1,8 @@
 {
   "anvil_cost": 4,
   "description": {
-    "translate": "enchantment.minecraft.frost_walker"
+    "translate": "enchantment.minecraft.frost_walker",
+	"color": "gold"
   },
   "effects": {
     "minecraft:damage_immunity": [

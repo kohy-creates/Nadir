@@ -1,6 +1,7 @@
 {
 	"description": {
-		"translate": "enchantment.minecraft.multishot"
+		"translate": "enchantment.minecraft.multishot",
+		"color": "gold"
 	},
 	"exclusive_set": "#minecraft:exclusive_set/crossbow",
 	"supported_items": "#nadir:enchantable/ranged",

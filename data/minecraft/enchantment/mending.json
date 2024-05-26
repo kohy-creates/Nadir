@@ -3,7 +3,7 @@
 		"translate": "enchantment.minecraft.mending"
 	},
 	"supported_items": "#minecraft:enchantable/durability",
-	"weight": 3,
+	"weight": 2,
 	"max_level": 4,
 	"min_cost": {
 		"base": 12,

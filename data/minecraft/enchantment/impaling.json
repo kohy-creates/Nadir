@@ -1,42 +1,163 @@
 {
-  "anvil_cost": 4,
-  "description": {
-    "translate": "enchantment.minecraft.impaling"
-  },
-  "effects": {
-    "minecraft:damage": [
-      {
-        "effect": {
-          "type": "minecraft:add",
-          "value": {
-            "type": "minecraft:linear",
-            "base": 2.5,
-            "per_level_above_first": 2.5
-          }
-        },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "type": "#minecraft:sensitive_to_impaling"
-          }
-        }
-      }
-    ]
-  },
-  "exclusive_set": "#minecraft:exclusive_set/damage",
-  "max_cost": {
-    "base": 21,
-    "per_level_above_first": 8
-  },
-  "max_level": 5,
-  "min_cost": {
-    "base": 1,
-    "per_level_above_first": 8
-  },
-  "slots": [
-    "mainhand"
-  ],
-  "supported_items": "#minecraft:enchantable/trident",
-  "weight": 2
+	"description": {
+		"translate": "enchantment.minecraft.impaling"
+	},
+	"supported_items": "#minecraft:enchantable/trident",
+	"weight": 2,
+	"max_level": 5,
+	"min_cost": {
+		"base": 1,
+		"per_level_above_first": 8
+	},
+	"max_cost": {
+		"base": 21,
+		"per_level_above_first": 8
+	},
+	"anvil_cost": 4,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:damage": [
+			{
+				"effect": {
+					"type": "minecraft:multiply",
+					"factor": {
+						"type": "minecraft:linear",
+						"base": 1.2,
+						"per_level_above_first": 0.2
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:any_of",
+					"terms": [
+						{
+							"condition": "minecraft:all_of",
+							"terms": [
+								{
+									"condition": "minecraft:entity_properties",
+									"entity": "this",
+									"predicate": {
+										"location": {
+											"can_see_sky": true
+										}
+									}
+								},
+								{
+									"condition": "minecraft:any_of",
+									"terms": [
+										{
+											"condition": "minecraft:weather_check",
+											"raining": true
+										},
+										{
+											"condition": "minecraft:weather_check",
+											"thundering": true
+										}
+									]
+								}
+							]
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"state": {
+										"waterlogged": "true"
+									}
+								}
+							}
+						},
+						{
+							"condition": "minecraft:location_check",
+							"predicate": {
+								"block": {
+									"blocks": [
+										"minecraft:water",
+										"minecraft:water_cauldron"
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0}
+					],
+					"requirements": {
+						"condition": "minecraft:any_of",
+						"terms": [
+							{
+								"condition": "minecraft:all_of",
+								"terms": [
+									{
+										"condition": "minecraft:entity_properties",
+										"entity": "this",
+										"predicate": {
+											"location": {
+												"can_see_sky": true
+											}
+										}
+									},
+									{
+										"condition": "minecraft:any_of",
+										"terms": [
+											{
+												"condition": "minecraft:weather_check",
+												"raining": true
+											},
+											{
+												"condition": "minecraft:weather_check",
+												"thundering": true
+											}
+										]
+									}
+								]
+							},
+							{
+								"condition": "minecraft:location_check",
+								"predicate": {
+									"block": {
+										"state": {
+											"waterlogged": "true"
+										}
+									}
+								}
+							},
+							{
+								"condition": "minecraft:location_check",
+								"predicate": {
+									"block": {
+										"blocks": [
+											"minecraft:water",
+											"minecraft:water_cauldron"
+										]
+									}
+								}
+							}
+						]
+					}
+				}
+			}
+		]
+	}
 }
