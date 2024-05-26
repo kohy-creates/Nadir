@@ -38,6 +38,7 @@
 		"nadir:illagers_bane",
 		"nadir:familiarity",
 		"nadir:magic_protection",
-		"minecraft:mending"
+		"minecraft:mending",
+		"nadir:flow"
 	]
 }
