@@ -20,7 +20,7 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
-				"name": "enchantment.sweeping_edge",
+				"id": "minecraft:enchantment.sweeping_edge",
 				"attribute": "minecraft:player.sweeping_damage_ratio",
 				"amount": {
 					"type": "minecraft:fraction",
@@ -35,8 +35,7 @@
 						"per_level_above_first": 1
 					}
 				},
-				"operation": "add_value",
-				"uuid": "5d3d087b-debe-4037-b53e-d84f3ff51f17"
+				"operation": "add_value"
 			}
 		]
 	}

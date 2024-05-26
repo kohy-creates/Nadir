@@ -20,15 +20,14 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
-				"name": "enchantment.fire_protection",
+				"id": "minecraft:enchantment.fire_protection",
 				"attribute": "minecraft:generic.burning_time",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": -0.15,
 					"per_level_above_first": -0.15
 				},
-				"operation": "add_multiplied_base",
-				"uuid": "b572ecd2-ac0c-4071-abde-9594af072a37"
+				"operation": "add_multiplied_base"
 			}
 		],
 		"minecraft:damage_protection": [

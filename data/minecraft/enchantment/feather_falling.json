@@ -20,26 +20,24 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
-				"name": "enchantment.feather_falling",
+				"id": "minecraft:enchantment.feather_falling",
 				"attribute": "minecraft:generic.fall_damage_multiplier",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": -0.1,
 					"per_level_above_first": -0.1
 				},
-				"operation": "add_multiplied_base",
-				"uuid": "7a898331-51bd-474a-a238-a523d827c59c"
+				"operation": "add_multiplied_base"
 			},
 			{
-				"name": "enchantment.feather_falling",
+				"id": "minecraft:enchantment.feather_falling",
 				"attribute": "minecraft:generic.safe_fall_distance",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 2,
 					"per_level_above_first": 2
 				},
-				"operation": "add_value",
-				"uuid": "7a898331-51bd-474a-a238-a523d827c59c"
+				"operation": "add_value"
 			}
 		]
 	}

@@ -21,18 +21,16 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
-				"name": "enchantment.bulk_curse",
+				"id": "nadir:enchantment.bulk_curse",
 				"attribute": "minecraft:generic.movement_speed",
 				"amount": -0.15,
-				"operation": "add_multiplied_total",
-				"uuid": "ae982faa-6beb-4a60-b3ed-10e735fe5c42"
+				"operation": "add_multiplied_total"
 			},
 			{
-				"name": "enchantment.bulk_curse",
+				"id": "nadir:enchantment.bulk_curse",
 				"attribute": "minecraft:generic.armor",
 				"amount": 1,
-				"operation": "add_value",
-				"uuid": "ae982faa-6beb-4a60-b3ed-10e735fe5c42"
+				"operation": "add_value"
 			}
 		]
 	}
