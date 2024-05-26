@@ -7,6 +7,7 @@
 		"minecraft:frost_walker",
 		"minecraft:wind_burst",
 		"minecraft:multishot",
-		"nadir:endless_quiver"
+		"nadir:endless_quiver",
+		"nadir:warp"
 	]
 }
