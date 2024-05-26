@@ -24,8 +24,8 @@
 				"attribute": "minecraft:generic.explosion_knockback_resistance",
 				"amount": {
 					"type": "minecraft:linear",
-					"base": 0.25,
-					"per_level_above_first": 0.15
+					"base": 0.05,
+					"per_level_above_first": 0.05
 				},
 				"operation": "add_value"
 			}
