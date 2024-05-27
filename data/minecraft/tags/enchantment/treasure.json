@@ -10,6 +10,7 @@
 		"nadir:endless_quiver",
 		"nadir:warp",
 		"nadir:step",
-		"nadir:sharpshooter"
+		"nadir:sharpshooter",
+		"nadir:magma_walker"
 	]
 }
