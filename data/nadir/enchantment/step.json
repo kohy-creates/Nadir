@@ -1,0 +1,36 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.step",
+		"fallback": "Step",
+		"color": "gold"
+	},
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"weight": 5,
+	"max_level": 1,
+	"min_cost": {
+		"base": 20,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 6,
+	"slots": [
+		"feet"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:generic.step_height",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 1,
+					"per_level_above_first": 1
+				},
+				"operation": "add_value",
+				"id": "nadir:enchantment.step"
+			}
+		]
+	}
+}

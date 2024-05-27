@@ -39,6 +39,7 @@
 		"nadir:familiarity",
 		"nadir:magic_protection",
 		"minecraft:mending",
-		"nadir:flow"
+		"nadir:flow",
+		"nadir:spring"
 	]
 }

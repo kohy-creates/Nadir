@@ -2,6 +2,10 @@
 	"replace": true,
 	"values": [
 		"#minecraft:non_treasure",
-		"minecraft:frost_walker"
+		"minecraft:frost_walker",
+		"minecraft:multishot",
+		"nadir:endless_quiver",
+		"nadir:step",
+		"nadir:sharpshooter"
 	]
 }

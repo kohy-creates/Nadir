@@ -1,0 +1,32 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.sharpshooter",
+		"fallback": "Sharpshooter",
+		"color": "gold"
+	},
+	"supported_items": "#nadir:enchantable/ranged",
+	"weight": 5,
+	"max_level": 1,
+	"min_cost": {
+		"base": 30,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 70,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 10,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:projectile_spawned": [
+			{
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "nadir:sharpshooter/edit_arrow"
+				}
+			}
+		]
+	}
+}
