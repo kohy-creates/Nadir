@@ -25,9 +25,9 @@
 				"amount": {
 					"type": "minecraft:linear",
 					"base": -0.15,
-					"per_level_above_first": -0.15
+					"per_level_above_first": -0.05
 				},
-				"operation": "add_multiplied_base"
+				"operation": "add_multiplied_total"
 			}
 		],
 		"minecraft:damage_protection": [
