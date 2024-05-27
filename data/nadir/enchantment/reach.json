@@ -1,0 +1,35 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.reach",
+		"fallback": "Reach"
+	},
+	"supported_items": "#minecraft:enchantable/mining",
+	"weight": 3,
+	"max_level": 3,
+	"min_cost": {
+		"base": 7,
+		"per_level_above_first": 11
+	},
+	"max_cost": {
+		"base": 14,
+		"per_level_above_first": 14
+	},
+	"anvil_cost": 2,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"id": "nadir:enchantment.reach",
+				"attribute": "minecraft:player.block_interaction_range",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 1,
+					"per_level_above_first": 0.5
+				},
+				"operation": "add_value"
+			}
+		]
+	}
+}

@@ -24,8 +24,8 @@
 				"attribute": "minecraft:generic.water_movement_efficiency",
 				"amount": {
 					"type": "minecraft:linear",
-					"base": 0.2,
-					"per_level_above_first": 0.15
+					"base": 0.3,
+					"per_level_above_first": 0.2
 				},
 				"id": "nadir:enchantment.flow",
 				"operation": "add_value"

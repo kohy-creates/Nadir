@@ -1,0 +1,38 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.swift_strike",
+		"fallback": "Swift Strike"
+	},
+	"supported_items": "#minecraft:enchantable/weapon",
+	"exclusive_set": [
+		"minecraft:sharpness"
+	],
+	"weight": 5,
+	"max_level": 4,
+	"min_cost": {
+		"base": 5,
+		"per_level_above_first": 12
+	},
+	"max_cost": {
+		"base": 11,
+		"per_level_above_first": 15
+	},
+	"anvil_cost": 4,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:generic.attack_speed",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 0.05,
+					"per_level_above_first": 0.04
+				},
+				"operation": "add_multiplied_base",
+				"id": "nadir:enchantment.swiftfooted"
+			}
+		]
+	}
+}

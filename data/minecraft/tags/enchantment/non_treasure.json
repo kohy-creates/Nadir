@@ -40,6 +40,9 @@
 		"nadir:magic_protection",
 		"minecraft:mending",
 		"nadir:flow",
-		"nadir:spring"
+		"nadir:spring",
+		"nadir:reach",
+		"nadir:swift_strike",
+		"nadir:swiftfooted"
 	]
 }

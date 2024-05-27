@@ -1,0 +1,35 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.swiftfooted",
+		"fallback": "Swiftfooted"
+	},
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"weight": 5,
+	"max_level": 5,
+	"min_cost": {
+		"base": 3,
+		"per_level_above_first": 14
+	},
+	"max_cost": {
+		"base": 15,
+		"per_level_above_first": 18
+	},
+	"anvil_cost": 3,
+	"slots": [
+		"feet"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:generic.movement_speed",
+				"amount": {
+					"type": "minecraft:linear",
+					"base": 0.05,
+					"per_level_above_first": 0.02
+				},
+				"operation": "add_multiplied_base",
+				"id": "nadir:enchantment.swiftfooted"
+			}
+		]
+	}
+}

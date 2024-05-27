@@ -7,11 +7,11 @@
 	"max_level": 5,
 	"min_cost": {
 		"base": 1,
-		"per_level_above_first": 11
+		"per_level_above_first": 14
 	},
 	"max_cost": {
-		"base": 12,
-		"per_level_above_first": 11
+		"base": 15,
+		"per_level_above_first": 15
 	},
 	"anvil_cost": 3,
 	"slots": [
