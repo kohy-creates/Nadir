@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:enchanting_table",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.nadir.root.title",
+			"fallback": "Nadir",
+			"color": "#69359c"
+		},
+		"description": {
+			"translate": "advancements.nadir.root.description",
+			"fallback": "Add a little bit of magic to your world"
+		},
+		"background": "minecraft:textures/block/obsidian.png",
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"enchanted_item": {
+			"trigger": "minecraft:enchanted_item"
+		}
+	},
+	"requirements": [
+		[
+			"enchanted_item"
+		]
+	],
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,47 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.scholar",
+		"fallback": "Scholar"
+	},
+	"supported_items": "#minecraft:enchantable/armor",
+	"weight": 3,
+	"max_level": 4,
+	"min_cost": {
+		"base": 9,
+		"per_level_above_first": 16
+	},
+	"max_cost": {
+		"base": 21,
+		"per_level_above_first": 17
+	},
+	"anvil_cost": 3,
+	"slots": [
+		"armor"
+	],
+	"effects": {
+		"minecraft:block_experience": [
+			{
+				"effect": {
+					"type": "minecraft:multiply",
+					"factor": {
+						"type": "minecraft:linear",
+						"base": 1.1,
+						"per_level_above_first": 0.05
+					}
+				}
+			}
+		],
+		"minecraft:mob_experience": [
+			{
+				"effect": {
+					"type": "minecraft:multiply",
+					"factor": {
+						"type": "minecraft:linear",
+						"base": 1.1,
+						"per_level_above_first": 0.05
+					}
+				}
+			}
+		]
+	}
+}

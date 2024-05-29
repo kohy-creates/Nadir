@@ -2,7 +2,7 @@
 	"description": {
 		"translate": "enchantment.minecraft.channeling"
 	},
-	"supported_items": "#minecraft:enchantable/trident",
+	"supported_items": "#nadir:enchantable/channeling",
 	"weight": 1,
 	"max_level": 1,
 	"min_cost": {
@@ -87,6 +87,50 @@
 						},
 						{
 							"condition": "minecraft:entity_properties",
+							"entity": "direct_attacker",
+							"predicate": {
+								"movement": {
+									"fall_distance": {
+										"min": 1.5
+									}
+								},
+								"slots": {
+									"weapon.mainhand": {
+										"items": "minecraft:mace"
+									}
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:summon_entity",
+							"entity": "minecraft:lightning_bolt"
+						},
+						{
+							"type": "minecraft:play_sound",
+							"sound": "minecraft:item.trident.thunder",
+							"volume": 5,
+							"pitch": 1
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:weather_check",
+							"thundering": true
+						},
+						{
+							"condition": "minecraft:entity_properties",
 							"entity": "this",
 							"predicate": {
 								"location": {
@@ -102,6 +146,26 @@
 							}
 						}
 					]
+				}
+			}
+		],
+		"minecraft:damage_immunity": [
+			{
+				"effect": {},
+				"requirements": {
+					"condition": "minecraft:damage_source_properties",
+					"predicate": {
+						"tags": [
+							{
+								"id": "minecraft:is_lightning",
+								"expected": true
+							},
+							{
+								"id": "minecraft:bypasses_invulnerability",
+								"expected": false
+							}
+						]
+					}
 				}
 			}
 		]

@@ -1,26 +1,27 @@
 {
-  "parent": "minecraft:story/mine_diamond",
-  "criteria": {
-    "enchanted_item": {
-      "trigger": "minecraft:enchanted_item"
-    }
-  },
-  "display": {
-    "description": {
-      "translate": "advancements.story.enchant_item.description"
-    },
-    "icon": {
-      "count": 1,
-      "id": "minecraft:enchanted_book"
-    },
-    "title": {
-      "translate": "advancements.story.enchant_item.title"
-    }
-  },
-  "requirements": [
-    [
-      "enchanted_item"
-    ]
-  ],
-  "sends_telemetry_event": true
+	"display": {
+		"icon": {
+			"id": "minecraft:enchanting_table",
+			"count": 1
+		},
+		"title": {
+			"translate": "advancements.story.enchant_item.title"
+		},
+		"description": {
+			"translate": "advancements.story.enchant_item.description"
+		},
+		"frame": "goal"
+	},
+	"parent": "minecraft:story/mine_diamond",
+	"criteria": {
+		"enchanted_item": {
+			"trigger": "minecraft:enchanted_item"
+		}
+	},
+	"requirements": [
+		[
+			"enchanted_item"
+		]
+	],
+	"sends_telemetry_event": true
 }

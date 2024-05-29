@@ -1,0 +1,39 @@
+{
+	"parent": "nadir:events/root",
+	"criteria": {
+		"kill_zephyr_enchant": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": {
+					"movement": {
+						"fall_distance": {
+							"min": 1.5
+						}
+					},
+					"slots": {
+						"weapon.mainhand": {
+							"items": "minecraft:mace",
+							"components": {},
+							"predicates": {
+								"minecraft:enchantments": [
+									{
+										"enchantments": "nadir:zephyr"
+									}
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"kill_zephyr_enchant"
+		]
+	],
+	"rewards": {
+		"function": "nadir:zephyr/refund_wind_charge"
+	},
+	"sends_telemetry_event": false
+}

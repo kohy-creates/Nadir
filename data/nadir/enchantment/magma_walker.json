@@ -17,7 +17,7 @@
 	},
 	"anvil_cost": 8,
 	"slots": [
-		"armor"
+		"feet"
 	],
 	"effects": {
 		"minecraft:tick": [

@@ -1,0 +1,31 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.failsafe",
+		"fallback": "Failsafe"
+	},
+	"supported_items": "#minecraft:enchantable/mace",
+	"weight": 2,
+	"max_level": 1,
+	"min_cost": {
+		"base": 30,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 60,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 8,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"id": "nadir:enchantment.failsafe",
+				"attribute": "minecraft:generic.fall_damage_multiplier",
+				"amount": -0.5,
+				"operation": "add_multiplied_total"
+			}
+		]
+	}
+}

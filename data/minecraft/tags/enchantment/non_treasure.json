@@ -43,6 +43,9 @@
 		"nadir:spring",
 		"nadir:reach",
 		"nadir:swift_strike",
-		"nadir:swiftfooted"
+		"nadir:swiftfooted",
+		"nadir:scholar",
+		"nadir:zephyr",
+		"nadir:failsafe"
 	]
 }
