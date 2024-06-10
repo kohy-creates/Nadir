@@ -24,7 +24,7 @@
 			{
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "nadir:magma_walker/walk"
+					"function": "nadir:enchantments/magma_walker/walk"
 				},
 				"requirements": {
 					"condition": "minecraft:entity_properties",

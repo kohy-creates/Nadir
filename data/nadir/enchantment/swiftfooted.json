@@ -21,14 +21,46 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
+				"id": "nadir:enchantment.swiftfooted",
 				"attribute": "minecraft:generic.movement_speed",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 0.05,
 					"per_level_above_first": 0.02
 				},
-				"operation": "add_multiplied_base",
-				"id": "nadir:enchantment.swiftfooted"
+				"operation": "add_multiplied_base"
+			}
+		],
+		"minecraft:tick": [
+			{
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:ominous_spawning"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "entity_position",
+						"offset": 0.1
+					},
+					"horizontal_velocity": {},
+					"vertical_velocity": {},
+					"speed": 0.1
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"flags": {
+							"is_sneaking": false,
+							"is_sprinting": true,
+							"is_swimming": false,
+							"is_flying": false
+						}
+					}
+				}
 			}
 		]
 	}

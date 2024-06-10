@@ -28,7 +28,7 @@
 			{
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "nadir:warp/teleport"
+					"function": "nadir:enchantments/warp/teleport"
 				},
 				"requirements": {
 					"condition": "minecraft:entity_properties",

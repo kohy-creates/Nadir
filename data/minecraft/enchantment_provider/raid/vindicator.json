@@ -1,5 +1,13 @@
 {
-  "type": "minecraft:single",
-  "enchantment": "minecraft:sharpness",
-  "level": 1
+	"type": "minecraft:by_cost",
+	"enchantments": [
+		"minecraft:sharpness",
+		"minecraft:fire_aspect",
+		"minecraft:breach"
+	],
+	"cost": {
+		"type": "minecraft:uniform",
+		"min_inclusive": 2,
+		"max_inclusive": 13
+	}
 }

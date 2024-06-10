@@ -1,5 +1,9 @@
 {
 	"values": [
-		"#minecraft:non_treasure"
+		"#minecraft:non_treasure",
+		"minecraft:frost_walker",
+		"minecraft:multishot",
+		"nadir:step",
+		"nadir:sharpshooter"
 	]
 }

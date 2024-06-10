@@ -23,7 +23,7 @@
 			{
 				"id": "nadir:enchantment.failsafe",
 				"attribute": "minecraft:generic.fall_damage_multiplier",
-				"amount": -0.5,
+				"amount": -0.3333333333,
 				"operation": "add_multiplied_total"
 			}
 		]

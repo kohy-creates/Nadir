@@ -24,7 +24,7 @@
 			{
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "nadir:sharpshooter/edit_arrow"
+					"function": "nadir:enchantments/sharpshooter/edit_arrow"
 				}
 			}
 		]

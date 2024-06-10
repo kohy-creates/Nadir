@@ -1,5 +1,15 @@
 {
-  "type": "minecraft:single",
-  "enchantment": "minecraft:quick_charge",
-  "level": 2
+	"type": "minecraft:by_cost",
+	"enchantments": [
+		"minecraft:piercing",
+		"minecraft:multishot",
+		"minecraft:power",
+		"minecraft:flame",
+		"minecraft:quick_charge"
+	],
+	"cost": {
+		"type": "minecraft:uniform",
+		"min_inclusive": 8,
+		"max_inclusive": 24
+	}
 }

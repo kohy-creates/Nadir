@@ -21,14 +21,78 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
+				"id": "nadir:enchantment.flow",
 				"attribute": "minecraft:generic.water_movement_efficiency",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 0.3,
 					"per_level_above_first": 0.2
 				},
-				"id": "nadir:enchantment.flow",
 				"operation": "add_value"
+			}
+		],
+		"minecraft:tick": [
+			{
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:ominous_spawning"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "in_bounding_box"
+					},
+					"horizontal_velocity": {},
+					"vertical_velocity": {},
+					"speed": 0
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"location": {
+							"fluid": {
+								"fluids": "#minecraft:water"
+							}
+						},
+						"flags": {
+							"is_swimming": true
+						}
+					}
+				}
+			},
+			{
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:trial_spawner_detection_ominous"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "in_bounding_box"
+					},
+					"horizontal_velocity": {},
+					"vertical_velocity": {},
+					"speed": 0
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"location": {
+							"fluid": {
+								"fluids": "#minecraft:water"
+							}
+						},
+						"flags": {
+							"is_swimming": false
+						}
+					}
+				}
 			}
 		]
 	}

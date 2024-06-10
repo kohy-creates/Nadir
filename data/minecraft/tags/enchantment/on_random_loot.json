@@ -1,10 +1,12 @@
 {
 	"values": [
 		"#minecraft:non_treasure",
-		"minecraft:binding_curse",
-		"minecraft:vanishing_curse",
+		"#minecraft:curse",
 		"minecraft:frost_walker",
-		"minecraft:mending",
-		"minecraft:multishot"
+		"minecraft:multishot",
+		"nadir:magma_walker",
+		"nadir:step",
+		"nadir:sharpshooter",
+		"nadir:lucky"
 	]
 }
