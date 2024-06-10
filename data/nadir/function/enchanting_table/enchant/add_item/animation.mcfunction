@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=nadir.item.item_display,tag=!nadir.animated] run function nadir:enchanting_table/enchant/add_item/scheduled

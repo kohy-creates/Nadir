@@ -20,13 +20,20 @@
 		"hidden": false
 	},
 	"criteria": {
-		"enchanted_item": {
-			"trigger": "minecraft:enchanted_item"
+		"craft_enchanting_table": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "#nadir:enchanting_table"
+					}
+				]
+			}
 		}
 	},
 	"requirements": [
 		[
-			"enchanted_item"
+			"craft_enchanting_table"
 		]
 	],
 	"sends_telemetry_event": false

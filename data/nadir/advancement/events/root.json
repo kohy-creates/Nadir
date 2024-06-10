@@ -1,7 +1,7 @@
 {
 	"criteria": {
 		"root": {
-			"trigger": "minecraft:impossible"
+			"trigger": "minecraft:tick"
 		}
 	}
 }
