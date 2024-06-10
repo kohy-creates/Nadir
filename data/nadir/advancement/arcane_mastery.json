@@ -5,19 +5,19 @@
 			"count": 1
 		},
 		"title": {
-			"translate": "advancements.nadir.the_basics.title",
-			"fallback": "The Basics"
+			"translate": "advancements.nadir.arcane_mastery.title",
+			"fallback": "Arcane Mastery"
 		},
 		"description": {
-			"translate": "advancements.nadir.the_basics.description",
-			"fallback": "Enchant an item at level 30"
+			"translate": "advancements.nadir.arcane_mastery.description",
+			"fallback": "Enchant an item at level 45"
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "nadir:root",
+	"parent": "nadir:the_basics",
 	"criteria": {
 		"enchant": {
 			"trigger": "minecraft:impossible"

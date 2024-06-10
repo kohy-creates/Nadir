@@ -1,23 +1,23 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:bookshelf",
+			"id": "minecraft:honeycomb_block",
 			"count": 1
 		},
 		"title": {
-			"translate": "advancements.nadir.the_basics.title",
-			"fallback": "The Basics"
+			"translate": "advancements.nadir.be_gone_chaos.title",
+			"fallback": "Be Gone Chaos!"
 		},
 		"description": {
-			"translate": "advancements.nadir.the_basics.description",
-			"fallback": "Enchant an item at level 30"
+			"translate": "advancements.nadir.be_gone_chaos.description",
+			"fallback": "Enchant with 100 Rectification"
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "nadir:root",
+	"parent": "nadir:flux_manipulator",
 	"criteria": {
 		"enchant": {
 			"trigger": "minecraft:impossible"

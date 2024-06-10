@@ -47,3 +47,7 @@ playsound minecraft:entity.player.levelup block @a[distance=0..] ~ ~ ~ 0.5 2
 particle enchant ~ ~-.35 ~ 0.3 0.3 0.3 0 20 normal
 particle witch ~ ~-.35 ~ 0.3 0.3 0.3 0 7 normal
 particle trial_spawner_detection_ominous ~ ~-.75 ~ 0.4 0.15 0.4 0 6 normal
+
+function #nadir:on_enchant/at_table
+
+function nadir:enchanting_table/enchant/enchant/advancements

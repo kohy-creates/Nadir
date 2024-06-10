@@ -1,23 +1,23 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:bookshelf",
+			"id": "minecraft:wither_skeleton_skull",
 			"count": 1
 		},
 		"title": {
-			"translate": "advancements.nadir.the_basics.title",
-			"fallback": "The Basics"
+			"translate": "advancements.nadir.gambler.title",
+			"fallback": "Gambler"
 		},
 		"description": {
-			"translate": "advancements.nadir.the_basics.description",
-			"fallback": "Enchant an item at level 30"
+			"translate": "advancements.nadir.gambler.description",
+			"fallback": "Enchant at 100 Quanta"
 		},
-		"frame": "task",
+		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "nadir:root",
+	"parent": "nadir:flux_manipulator",
 	"criteria": {
 		"enchant": {
 			"trigger": "minecraft:impossible"

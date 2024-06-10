@@ -1,16 +1,16 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:bookshelf",
+			"id": "minecraft:amethyst_block",
 			"count": 1
 		},
 		"title": {
-			"translate": "advancements.nadir.the_basics.title",
-			"fallback": "The Basics"
+			"translate": "advancements.nadir.flux_manipulator.title",
+			"fallback": "Flux Manipulator"
 		},
 		"description": {
-			"translate": "advancements.nadir.the_basics.description",
-			"fallback": "Enchant an item at level 30"
+			"translate": "advancements.nadir.flux_manipulator.description",
+			"fallback": "Enchant with at least 30 of both Quanta and Rectification"
 		},
 		"frame": "task",
 		"show_toast": true,

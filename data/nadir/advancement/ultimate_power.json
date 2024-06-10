@@ -1,18 +1,18 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:bookshelf",
+			"id": "minecraft:enchanting_table",
 			"count": 1
 		},
 		"title": {
-			"translate": "advancements.nadir.the_basics.title",
-			"fallback": "The Basics"
+			"translate": "advancements.nadir.ultimate_power.title",
+			"fallback": "Ultimate Power"
 		},
 		"description": {
-			"translate": "advancements.nadir.the_basics.description",
-			"fallback": "Enchant an item at level 30"
+			"translate": "advancements.nadir.ultimate_power.description",
+			"fallback": "Enchant with all stats at maximum"
 		},
-		"frame": "task",
+		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
