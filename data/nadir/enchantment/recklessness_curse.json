@@ -7,7 +7,7 @@
 		"minecraft:feather_falling"
 	],
 	"supported_items": "#minecraft:enchantable/foot_armor",
-	"weight": 4,
+	"weight": 1,
 	"max_level": 1,
 	"min_cost": {
 		"base": 15,
@@ -26,7 +26,7 @@
 			{
 				"id": "nadir:enchantment.recklessness_curse",
 				"attribute": "minecraft:generic.fall_damage_multiplier",
-				"amount": 0.40,
+				"amount": 0.4,
 				"operation": "add_multiplied_total"
 			}
 		]

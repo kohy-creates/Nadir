@@ -47,6 +47,7 @@
 		"nadir:scholar",
 		"nadir:zephyr",
 		"nadir:failsafe",
-		"nadir:grip"
+		"nadir:grip",
+		"nadir:soulbind"
 	]
 }

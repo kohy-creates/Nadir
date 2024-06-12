@@ -7,11 +7,11 @@
 	"max_level": 5,
 	"min_cost": {
 		"base": 1,
-		"per_level_above_first": 8
+		"per_level_above_first": 10
 	},
 	"max_cost": {
 		"base": 21,
-		"per_level_above_first": 8
+		"per_level_above_first": 12
 	},
 	"anvil_cost": 4,
 	"slots": [
@@ -25,7 +25,7 @@
 					"factor": {
 						"type": "minecraft:linear",
 						"base": 1.2,
-						"per_level_above_first": 0.2
+						"per_level_above_first": 0.1
 					}
 				},
 				"requirements": {
@@ -90,18 +90,12 @@
 				"effect": {
 					"type": "minecraft:all_of",
 					"effects": [
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0},
-						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:splash"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":0}
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:trial_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:trial_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:trial_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:trial_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:trial_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1},
+						{"type":"minecraft:spawn_particles","particle":{"type":"minecraft:trial_omen"},"horizontal_position":{"type":"in_bounding_box"},"vertical_position":{"type":"in_bounding_box"},"horizontal_velocity":{},"vertical_velocity":{},"speed":1}
 					],
 					"requirements": {
 						"condition": "minecraft:any_of",

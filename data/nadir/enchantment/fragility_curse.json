@@ -7,7 +7,7 @@
 		"minecraft:unbreaking"
 	],
 	"supported_items": "#minecraft:enchantable/durability",
-	"weight": 5,
+	"weight": 1,
 	"max_level": 1,
 	"min_cost": {
 		"base": 15,

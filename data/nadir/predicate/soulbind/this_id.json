@@ -1,0 +1,26 @@
+{
+	"condition": "minecraft:value_check",
+	"value": {
+		"type": "minecraft:score",
+		"target": "this",
+		"score": "nadir.ID"
+	},
+	"range": {
+		"min": {
+			"type": "minecraft:score",
+			"target": {
+				"type": "minecraft:fixed",
+				"name": "#this"
+			},
+			"score": "nadir.ID"
+		},
+		"max": {
+			"type": "minecraft:score",
+			"target": {
+				"type": "minecraft:fixed",
+				"name": "#this"
+			},
+			"score": "nadir.ID"
+		}
+	}
+}

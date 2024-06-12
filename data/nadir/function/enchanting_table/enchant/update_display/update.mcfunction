@@ -9,6 +9,7 @@ execute if entity @s[tag=nadir.has_item] run data modify storage nadir:temp ench
 execute if entity @s[tag=!nadir.has_item.enchanted] run data modify storage nadir:temp enchant_menu.enchanted set value 0b
 execute if entity @s[tag=nadir.has_item.enchanted] run data modify storage nadir:temp enchant_menu.enchanted set value 1b
 
+scoreboard players set @s nadir.enchanting_table.level 0
 execute store result score @s nadir.enchanting_table.level run function nadir:enchanting_table/enchant/calculate_level/get_level
 execute store result storage nadir:temp enchant_menu.level int 1 run scoreboard players get @s nadir.enchanting_table.level
 

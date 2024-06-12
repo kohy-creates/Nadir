@@ -4,7 +4,7 @@
 		"fallback": "Curse of Bulk"
 	},
 	"supported_items": "#minecraft:enchantable/armor",
-	"weight": 5,
+	"weight": 1,
 	"max_level": 1,
 	"min_cost": {
 		"base": 20,

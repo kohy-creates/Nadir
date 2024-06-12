@@ -1,3 +1,7 @@
+scoreboard objectives add nadir.ID dummy
+scoreboard objectives add nadir.respawned custom:time_since_death
+scoreboard objectives add nadir.deaths deathCount
+
 scoreboard objectives add nadir.misc dummy
 scoreboard objectives add nadir.misc2 dummy
 scoreboard objectives add nadir.text_display.animation dummy
@@ -11,6 +15,8 @@ scoreboard objectives add nadir.enchanting_table.base dummy
 scoreboard objectives add nadir.enchanting_table.level dummy
 
 scoreboard objectives add nadir.enchanting_table.3s_timer dummy
+
+forceload add 0 0
 
 data modify storage nadir:temp animations.scale_up set value [[0.0d,0.0d,0.0d],[0.1d,0.1d,0.1d],[0.2d,0.2d,0.2d],[0.3d,0.3d,0.3d],[0.4d,0.4d,0.4d],[0.5d,0.5d,0.5d],[0.6d,0.6d,0.6d],[0.7d,0.7d,0.7d],[0.8d,0.8d,0.8d],[0.9d,0.9d,0.9d],[1.0d,1.0d,1.0d]]
 data modify storage nadir:temp animations.teleport set value [1.5d,1.53d,1.56d,1.59d,1.62d,1.65d,1.675d,1.7d,1.725d,1.7625d,1.8d]
