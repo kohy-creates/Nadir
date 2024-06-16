@@ -6,9 +6,9 @@ Nadir also **rebalances** most of Minecraft's enchantments and adds some new one
 
 ## Enchanting Table
 
-- Whenever you place your first Enchanting Table, you will receive **Ars Arcana** - Nadir's guide to the new and reworked enchanting.
-- Enchanting has been replaced with a GUI-less system. Right clicking on a newly placed Enchanting Table will bring up a new menu where you can select whether to enchant items or dismantle the Table. Only the Table's owner can dismantle the Table in order to improve compatibility with claim plugins on some Multiplayer servers.
-- While in the enchanting mode, **4 new variables**, all of which affect the outcome, will be displayed at the top of the menu, those being **Eterna**, **Quanta**, **Arcana** and **Rectification** respectively.
+Enchanting has been replaced with a GUI-less system. Right clicking on a newly placed Enchanting Table will bring up a new menu where you can select whether to enchant items or dismantle the Table. Only the Table's owner can dismantle the Table in order to improve compatibility with claim plugins on some Multiplayer servers.
+
+While in the enchanting mode, **4 new variables**, all of which affect the outcome, will be displayed at the top of the menu, those being **Eterna**, **Quanta**, **Arcana** and **Rectification** respectively.
 
 <details>
 <summary>Variables</summary>
@@ -35,7 +35,7 @@ Nadir also **rebalances** most of Minecraft's enchantments and adds some new one
 
 </details>
 
-- Adding different blocks to an enchanting setup can increase either of those 4 values.
+Adding different blocks to an enchanting setup can increase either of those 4 values. Or sometimes multiple variables at the same time!
 
 <details>
 <summary>Blocks that amplify enchanting variables</summary>
@@ -98,15 +98,25 @@ Nadir also **rebalances** most of Minecraft's enchantments and adds some new one
 <details>
 <summary>Other</summary>
 
-- **Dragon Egg** - gives a chance to roll treasure enchantments, scales with Arcana. Careful though, as curses are also classified as treasure enchantments!
+- **Dragon Egg** - gives a chance to roll treasure enchantments, chance scales with Arcana at a 1:1 ratio *(e.g. 54 Arcana = 54% chance)*. Careful though, as curses are also classified as treasure enchantments!
 - **Lectern** - put in a Written Book to set the Table's name to whatever is in its title
 
 </details>
 
 </details>
 
-- In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the iitem. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
-- Enchanting Table range has been extended upwards by 1 block to accommodate for requiring more blocks to work to its fullest potential.
+In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the iitem. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
+
+Enchanting Table block detection range has been extended upwards by 1 block to accommodate for requiring more blocks to work to its fullest potential.
+
+Whenever you place your first Enchanting Table, you will receive **Ars Arcana** - Nadir's guide to the new and reworked enchanting. It can be used if you don't want to come back to this page every 20 seconds to check what does what.
+
+New enchanting system can be disabled by doing
+```ts
+/scoreboard players set #nadir.config nadir.config.enable_new_enchanting 0
+```
+and re-enabled by **setting the score back to 1**.
+
 
 ## Enchantments
 
@@ -235,3 +245,13 @@ Chance to not damage the enchanted item:
 - 🚶‍♀️ **Step** [Boots] [TREASURE] - increases step height by 1, allowing for auto-stepping blocks without having to jump.
 
 </details>
+
+## Repair Cost
+
+By default, **Nadir keeps repair costs of all items at 0**. This means that while fusing enchantments, repairing items and performing other EXP-draining activities will still take just as many levels as it would normally do, **the item's repair cost won't increment**, meaning that it won't snowball into values too high for players to handle *(AKA `Too Expensive!`)*.
+
+This can be disabled by doing
+```ts
+/scoreboard players set #nadir.config nadir.config.remove_repair_cost 0
+```
+and re-enabled by **setting the score back to 1**.
