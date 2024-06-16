@@ -1,4 +1,23 @@
-# Nadir 💜
+![Nadir](https://i.imgur.com/U0yrgV2.png)
+
+<br>
+
+-------
+
+[![Discord](https://img.shields.io/discord/727033287343734885?color=7289DA&logo=discord&style=for-the-badge&logoColor=7289DA)](https://discord.kohara.xyz/)
+[![Forks](https://img.shields.io/github/forks/kohy-creates/Nadir?style=for-the-badge&logo=github&color=green)](https://github.com/kohy-creates/Nadir/members)
+[![Stars](https://img.shields.io/github/stars/kohy-creates/Nadir?style=for-the-badge&logo=github&color=yellow)](https://github.com/kohy-creates/Nadir/stargazers)
+[![Code Size](https://img.shields.io/github/languages/code-size/kohy-creates/Nadir?style=for-the-badge&color=purple&logoColor=white)](https://github.com/kohy-creates/Nadir)
+
+### Current version for: ![List](https://img.shields.io/modrinth/game-versions/Ifo6hVSZ?style=for-the-badge&label=%20&color=white)
+
+-------
+
+[![Bisect Hosting](https://www.bisecthosting.com/partners/custom-banners/9b77975e-b706-4425-9662-9234be1e2789.webp)](https://bisecthosting.com/kohara)
+
+-------
+
+<br>
 
 Inspired by the [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) mod, **Nadir** aims to **reinvent the enchanting system** by making it more immersive and customizable outside of just adding more Bookshelves.
 
@@ -255,6 +274,23 @@ This can be disabled by doing
 /scoreboard players set #nadir.config nadir.config.remove_repair_cost 0
 ```
 and re-enabled by **setting the score back to 1**.
+
+## Other
+
+A lot of mobility and damage-reducing enchantments can be applied to Horse and Wolf armor. The list is as follows:
+- All Protection variants *(Horse)*
+> They are also 4x as efficient on a Horse Armor than they are normally to accommodate for there being only 1 piece.
+- Mending, Unbreaking *(Wolf)*
+- Depth Strider
+- Frost Walker
+- Respiration
+- Grip
+- Swiftfooted
+- Step
+- Spring
+- Thorns
+- Feather Falling
+- Soul Speed
 
 ## Compatibility
 
