@@ -1,0 +1,23 @@
+{
+	"parent": "nadir:events/root",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": "#nadir:enchanting_table"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"loot": [
+			"nadir:ars_arcana"
+		]
+	}
+}
