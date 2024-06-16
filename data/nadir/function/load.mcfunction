@@ -20,9 +20,6 @@ execute unless score #nadir.config nadir.config.enable_new_enchanting matches ..
 scoreboard objectives add nadir.config.remove_repair_cost dummy
 execute unless score #nadir.config nadir.config.remove_repair_cost matches ..2147483647 run scoreboard players set #nadir.config nadir.config.remove_repair_cost 1
 
-scoreboard objectives add nadir.config.max_repair_cost dummy
-execute unless score #nadir.config nadir.config.max_repair_cost matches ..2147483647 run scoreboard players set #nadir.config nadir.config.max_repair_cost 30
-
 scoreboard objectives add nadir.enchanting_table.3s_timer dummy
 
 forceload add 0 0
