@@ -255,3 +255,7 @@ This can be disabled by doing
 /scoreboard players set #nadir.config nadir.config.remove_repair_cost 0
 ```
 and re-enabled by **setting the score back to 1**.
+
+## Compatibility
+
+Nadir **should be compatible with most enchantment datapacks**. Just make sure that **Nadir loads first** in order for everything to work properly.
