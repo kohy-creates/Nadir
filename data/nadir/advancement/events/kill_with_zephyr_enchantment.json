@@ -33,7 +33,7 @@
 		]
 	],
 	"rewards": {
-		"function": "nadir:zephyr/refund_wind_charge"
+		"function": "nadir:enchantments/zephyr/refund_wind_charge"
 	},
 	"sends_telemetry_event": false
 }

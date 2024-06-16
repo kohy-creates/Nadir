@@ -3,7 +3,7 @@
 		"translate": "enchantment.nadir.swiftfooted",
 		"fallback": "Swiftfooted"
 	},
-	"supported_items": "#minecraft:enchantable/foot_armor",
+	"supported_items": "#nadir:enchantable/foot_and_animal",
 	"weight": 5,
 	"max_level": 5,
 	"min_cost": {
@@ -16,7 +16,7 @@
 	},
 	"anvil_cost": 3,
 	"slots": [
-		"feet"
+		"body"
 	],
 	"effects": {
 		"minecraft:attributes": [
@@ -53,6 +53,38 @@
 					"condition": "minecraft:entity_properties",
 					"entity": "this",
 					"predicate": {
+						"type": "#nadir:horses_and_wolves",
+						"movement": {
+							"horizontal_speed": {
+								"min": 0.01
+							},
+							"vertical_speed": 0
+						}
+					}
+				}
+			},
+			{
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:ominous_spawning"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "entity_position",
+						"offset": 0.1
+					},
+					"horizontal_velocity": {},
+					"vertical_velocity": {},
+					"speed": 0.1
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"type": "minecraft:player",
 						"flags": {
 							"is_sneaking": false,
 							"is_sprinting": true,

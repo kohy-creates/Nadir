@@ -2,7 +2,7 @@
 	"description": {
 		"translate": "enchantment.minecraft.thorns"
 	},
-	"supported_items": "#minecraft:enchantable/chest_armor",
+	"supported_items": "#nadir:enchantable/chest_and_animal",
 	"weight": 1,
 	"max_level": 3,
 	"min_cost": {
@@ -15,7 +15,7 @@
 	},
 	"anvil_cost": 8,
 	"slots": [
-		"any"
+		"body"
 	],
 	"effects": {
 		"minecraft:post_attack": [

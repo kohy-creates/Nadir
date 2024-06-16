@@ -3,7 +3,7 @@
 		"translate": "enchantment.minecraft.depth_strider"
 	},
 	"exclusive_set": "#minecraft:exclusive_set/boots",
-	"supported_items": "#minecraft:enchantable/foot_armor",
+	"supported_items": "#nadir:enchantable/foot_and_animal",
 	"weight": 2,
 	"max_level": 4,
 	"min_cost": {
@@ -16,7 +16,7 @@
 	},
 	"anvil_cost": 4,
 	"slots": [
-		"feet"
+		"body"
 	],
 	"effects": {
 		"minecraft:attributes": [

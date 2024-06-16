@@ -18,6 +18,7 @@
 		"minecraft:piercing",
 		"minecraft:sweeping_edge",
 		"minecraft:fire_aspect",
+		"nadir:venomous",
 		"minecraft:flame",
 		"minecraft:knockback",
 		"minecraft:punch",
@@ -28,6 +29,7 @@
 		"nadir:magic_protection",
 		"minecraft:feather_falling",
 		"nadir:spring",
+		"nadir:life_steal",
 		"minecraft:fortune",
 		"minecraft:looting",
 		"minecraft:silk_touch",
@@ -48,6 +50,7 @@
 		"minecraft:infinity",
 		"minecraft:mending",
 		"nadir:scholar",
-		"nadir:familiarity"
+		"nadir:familiarity",
+		"nadir:soulbind"
 	]
 }

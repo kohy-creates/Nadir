@@ -25,7 +25,7 @@
 				"affected": "attacker",
 				"effect": {
 					"type": "minecraft:explode",
-					"radius": 3.5,
+					"radius": 2,
 					"block_interaction": "trigger",
 					"small_particle": {
 						"type": "minecraft:gust_emitter_small"
@@ -36,17 +36,9 @@
 					"sound": "minecraft:entity.wind_charge.wind_burst",
 					"immune_blocks": "#minecraft:blocks_wind_charge_explosions",
 					"knockback_multiplier": {
-						"type": "minecraft:lookup",
-						"fallback": {
-							"type": "minecraft:linear",
-							"base": 1.5,
-							"per_level_above_first": 0.35
-						},
-						"values": [
-							1.2,
-							1.4,
-							1.6
-						]
+						"type": "minecraft:linear",
+						"base": 1.15,
+						"per_level_above_first": 0.15
 					}
 				},
 				"requirements": {

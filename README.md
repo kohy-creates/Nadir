@@ -13,22 +13,22 @@ Nadir also **rebalances** most of Minecraft's enchantments and adds some new one
 <details>
 <summary>Variables</summary>
   
-**Eterna** - raw enchanting power, increases enchanting level
+**⚡ Eterna** - raw enchanting power, increases enchanting level
 > **Example:** 15 Eterna allows for enchanting at level 30, while 30 allows for enchanting at level 60
 > 
 > **Max value:** 30
 
-**Quanta** - chaos, amplifies the enchanting level by +- half of of its value
+**🔥 Quanta** - chaos, amplifies the enchanting level by +- half of of its value
 > **Example:** 50 Quanta would mean that its amplification potential ranges from `-25% ~ +25%`
 > 
 > **Max value:** 100%
 
-**Arcana** - secondary power, gives a chance to roll enchantments twice
+**🧪 Arcana** - secondary power, gives a chance to roll enchantments twice
 > **Example:** 25 Arcana gives a 25% chance to roll enchantments twice
 > 
 > **Max value:** 100%
 
-**Rectification** - zen, decreases Quanta's reduction potential
+**☯️ Rectification** - zen, decreases Quanta's reduction potential
 > **Example:** 100 Quanta and 50 Rectification would mean that Quanta's amplification potential ranges from `-25% ~ +50%` *(`-(100 / 2 * 0.5) ~ +(100 /2)`)*
 > 
 > **Max value:** 100%
@@ -98,7 +98,7 @@ Nadir also **rebalances** most of Minecraft's enchantments and adds some new one
 <details>
 <summary>Other</summary>
 
-- **Dragon Egg** - gives a chance to roll treasure enchantments, scales with Arcana.
+- **Dragon Egg** - gives a chance to roll treasure enchantments, scales with Arcana. Careful though, as curses are also classified as treasure enchantments!
 - **Lectern** - put in a Written Book to set the Table's name to whatever is in its title
 
 </details>
@@ -106,6 +106,7 @@ Nadir also **rebalances** most of Minecraft's enchantments and adds some new one
 </details>
 
 - In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the iitem. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
+- Enchanting Table range has been extended upwards by 1 block to accommodate for requiring more blocks to work to its fullest potential.
 
 ## Enchantments
 
@@ -117,7 +118,7 @@ Additionaly, some changes general changes have been made. All treasure enchantme
 <summary>Changes to vanilla enchantments</summary>
 
 - ⚔️ **Sharpnes** - can be applied to Tridents and Maces.
-- ⚔️ **Smite, Bane of Arhtropods** - now stack with Sharpness and each other, changed damage increase to `+10% * (level + 1)` *(total of +60% at level V)*. Both enchantments can be applied to Tridents and Maces.
+- ⚔️ **Smite, Bane of Arhtropods** - stack with Sharpness and each other, changed damage increase to `+10% * (level + 1)` *(total of +60% at level V)*. Both enchantments can be applied to Tridents and Maces.
 - ⚔️ **Knockback** - reduced knockback by 33%.
 - ⚔️ **Sweeping Edge** - reduced enchantment efficiency.
 - 🛡️ **Protection** - reduced base damage reduction per level from +4% to +2.5% and increased max level from IV to V.
@@ -126,7 +127,7 @@ Additionaly, some changes general changes have been made. All treasure enchantme
 - 🛡️ **Fire Protection** - changed burn time decrease to `-10% + 5% * level`, stacking multiplicatively with other pieces instead of additively. 
 - 🛡️ **Blast Protection** - reduced explosion knockback resistance to 5% per level. 
 > This means that each specialized Protection enchantment can provide an extra 48% damage reduction against a given damage type.
-- 🍃 **Feather Falling** - reworked to reduce taken fall damage by `10% * level` and increase safe fall distance by `level *2` blocks.
+- 🍃 **Feather Falling** - reworked to reduce taken fall damage by `5% * (level + 1)` and increase safe fall distance by `1 + level * 2` blocks.
 - 🔨 **Unbreaking** - slighlty nerfed Ubreaking on tools and buffed the effect on armor. Unbreaking now also scales to level V.
 
 <details>
@@ -142,7 +143,7 @@ Chance to not damage the enchanted item:
  
 </details>
 
-- 🔨 **Mending** - no longer a treasure enchantment, can be found in Enchanting Table. Has IV max levels, with level IV being the same as Mending in Vanilla. It's also a lot easier to get in the Enchanting Table than other enchantments, only requiring a minimum level of 5. However, it's rarity is rather low when there are a lot of enchantments to pick from and higher levels are far less common compared to other enchantments.
+- 🔨 **Mending** - no longer a treasure enchantment, can be found in Enchanting Table. Has IV max levels, with level IV being the same as Mending in Vanilla. It's also a lot easier to get in the Enchanting Table than other enchantments, only requiring a minimum level of 5. However, it's rarity is rather low when there are a lot of enchantments to pick from and higher levels of Mending are far less common compared to other enchantments.
 - 🏹 **Power** - can be applied to Crossbows. Reduced extra damage
 > I can't say the exact values due to how Arrow damage is calculated, but during my test, Power V arrow damage was reduced from 20 in vanilla to ~13.
 - 🏹 **Multishot** - now a treasure enchantment and can be applied to Bows. Arrows are shot in a little bit of a spread rather than at strictly pre-defined angles.
@@ -150,10 +151,10 @@ Chance to not damage the enchanted item:
 - 🏹 **Flame** - can be applied to Crossbows.
 - 🏹 **Punch** - can be applied to Crossbows. Reduced knockback by 33%.
 - 🏹 **Infinity** - now stacks with Mending, has III levels in total and conserves all types of Arrows. Now has a `12% * (level + 1)` chance to save ammunition rather than always doing so.
-- 🏹 **Quick Charge** - reduced efficiency from `25% * level*` to `10% * (level + 1)`
+- 🏹 **Quick Charge** - reduced efficiency from `25% * level` to `10% * (level + 1)`
 - 🔥 **Fire Aspect** - now has IV levels in total, each level increases burn duration by 2 seconds.
-- 🎣 **Lure, Luck of The Sea** - both enchaments gain an extra level *(new max is IV)* and are easier to get from a lower-level Enchanting Table, but at the same time it is harder to get them in their higher levels.
-- 🔱 **Impaling** - reworked to apply against any mob that is wet *(AKA standing in water or rain)*, reduced damage increase from `2.5 * level*` to `+10% * (lvl + 1)`.
+- 🎣 **Lure, Luck of The Sea** - both enchaments have an extra level *(new max is IV)* and are easier to get from a lower-level Enchanting Table, but at the same time it is harder to get them in their higher levels.
+- 🔱 **Impaling** - reworked to apply against any mob that is wet *(AKA standing in water or rain)*, reduced damage increase from `2.5 * level` to `+10% * (lvl + 1)`.
 - 🔱 **Loyalty** - Tridents return 25% faster.
 - 🔱 **Riptide** - higher levels of Riptide are less common in the Enchanting Table.
 - ⛏️ **Silk Touch** - reduced minimum level requried for it to appear in the Enchanting Table.
@@ -164,7 +165,7 @@ Chance to not damage the enchanted item:
   
 - 🔴 Now exclusively a Chestplate enchantment *(since it doesn't stack well with other armor pieces)*.
 - 🟡 Changed damage from `1 ~ 5` to `(level) ~ (level + 2)`.
-- 🟢 Increased trigger chance from `level * 15%*` to `20% + level * 15%`.
+- 🟢 Increased trigger chance from `level * 15%` to `20% + level * 15%`.
 - 🟢 No longer decreases armor durability when reflecting damage.
 ------
 - **Vanilla Thorns trigger chance:**
@@ -184,16 +185,53 @@ Chance to not damage the enchanted item:
 
 </details>
 
-- 💦 **Depth Strider** - reduced efficiency from `33.4% * level*` to `20% * level*` and now has IV total levels instead of III.
+- 💦 **Depth Strider** - reduced efficiency from `33.4% * level` to `20% * level` and now has IV total levels instead of III.
 - 🍀 **Looting** - now works on Tridents, Axes and Maces.
-- 🪓 **Breach** - can be applied to Axes. Keep in mind that it is still mutually exclusive with ANY damage-increasing enchantments.
 - ⚡ **Channeling** - can be applied to Maces, creating lightning bolts on smash attacks during a thunder. Also provides immunity to electric damage while held.
+- 💨 **Breach** - can be applied to Axes. Reduced efficiency, from `15% * level` armor penetration to `7.5% * (level + 1)` Keep in mind that it is still mutually exclusive with ANY damage-increasing enchantments.
 - 💨 **Density** - reduced max level from V to III.
-- 💨 **Wind Burst** - reduced efficiency of levels II and III.
+- 💨 **Wind Burst** - reduced efficiency on all levels and level scaling.
 
 </details>
 
 <details>
 <summary>New enchantments</summary>
+
+**General:**
+- 🍀 **Lucky** [TREASURE] - increases player's luck while held. Only appliable to tools, ranged and melee weapons.
+- 🐶 **Familiarity** - prevents hurting tamed animals *(Cats, Dogs, etc.)*. Only appliable to ranged and melee weapons.
+- ⛓ **Soulbind** - saves the item on death and returns it to player after respawning. Can be applied to pretty much anything. Incompatible with Curse of Vanishing.
+
+**Curses:**
+- 🔥 **Curse of Anti-Entropy** [Armor] - sets the attacker on fire, but applies strong slowness to the wearer.
+- 🥌 **Curse of Bulk** [Armor] - increases the amount of provided armor points by 1, but decreases movement speed by 15%.
+- 🥌 **Curse of Enlargement** [Tools & Melee weapons] - increases reach by 1.5, but reduces attack speed and mining speed by 40%.
+- 🥱 **Curse of Exhaustion** [Tools] - reduces mining speed by 25%.
+- 🥛 **Curse of Fragility** - 33% chance for an item to take double durability damage on use.
+- 💥 **Curse of Recklessness** [Boots] - increases fall damage by 40%.
+
+**Weapon enchantments:**
+- ⚔️ **Illager's Bane** [IV] - increases damage against all Illagers by `+10% * (level + 1)`. Stacks with Sharpness and other specialized damage enchantments.
+- ⚔️ **Swift Strike** [III] - increases attack speed by `5% + 4% * (level - 1)`. Incompatible with Sharpness.
+- 🔱 **Flow** [III] [Trident] - increases movement speed in water while held by `10% + 20% * level`.
+- 🔱 **Warp** [Trident] [TREASURE] - teleports its owner to hit blocks. Incompatible with Loyalty as it has built-in Loyalty III.
+- 💨 **Zephyr** [III] [Mace] - killing a mob with a smash attack has a `33.4% * level` chance to give 1 Wind Charge.
+- 💨 **Failsafe** [Mace] - reduces fall damage by 33% while held.
+- 🏹 **Sharpshooter** [Bows & Crossbows] [TREASURE] - shot Arrows ignore gravity and travel in a straight line.
+- 🏹 **Endless Quiver** [Bows & Crossbows] [TREASURE] - stronger variant of Infinity which ALWAYS saves shot arrows. Incompatible with Infinity itself.
+- 🍄 **Venomous** [IV] [Melee Weapons] - inflicts Poison on hit, increasing in potency with levels. Incompatible with Fire Aspect and Life Steal.
+- 💗 **Life Steal** [II] [Melee Weapons] - slowly steals life from hit mobs *(4:5 heal to damage ratio)*. Incompatible with Fire Aspect and Venomous.
+
+**Tool enchantments:**
+- ⛏️ **Reach** [III] - increases tool reach by 1 block and then by 0.5 for every consecutive level.
+
+**Armor enchantments:**
+- 🛡️ **Magic Protection** [IV] - adds 3% damage reduction per level against magic-type damage. Stacks with all Protection variants.
+- 💨 **Swiftfooted** [IV] [Boots] - increases movement speed by `5% + 2% * (level - 1)`
+- 🔥 **Magma Walker** [Boots] [TREASURE] - temporarily turns Lava beneath your feet into Obsidian.
+- 🍃 **Scholar** [IV] - increases dropped EXP by `10% + 5% * (level - 1)`. Stacks additively.
+- 🧗‍♂️ **Grip** [III] [Boots] - increases knockback resistance by `15% + 10% * (level - 1)`.
+- 🦘 **Spring** [IV] [Boots] - increases jump height and safe fall distance. Incompatible with Feather Falling.
+- 🚶‍♀️ **Step** [Boots] [TREASURE] - increases step height by 1, allowing for auto-stepping blocks without having to jump.
 
 </details>

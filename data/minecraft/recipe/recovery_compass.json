@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"pattern": [
+		"SSS",
+		"SCS",
+		"SSS"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:compass"
+		},
+		"S": {
+			"item": "minecraft:echo_shard"
+		}
+	},
+	"result": {
+		"id": "minecraft:recovery_compass",
+		"count": 1,
+		"components": {
+			"minecraft:enchantments": {
+				"nadir:soulbind": 1
+			}
+		}
+	}
+}

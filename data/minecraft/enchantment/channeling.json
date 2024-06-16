@@ -168,6 +168,53 @@
 					}
 				}
 			}
+		],
+		"minecraft:tick": [
+			{
+				"effect": {
+					"type": "minecraft:spawn_particles",
+					"particle": {
+						"type": "minecraft:electric_spark"
+					},
+					"horizontal_position": {
+						"type": "in_bounding_box"
+					},
+					"vertical_position": {
+						"type": "in_bounding_box"
+					},
+					"horizontal_velocity": {
+						"base": {
+							"type": "minecraft:uniform",
+							"min_inclusive": -1,
+							"max_exclusive": 1
+						}
+					},
+					"vertical_velocity": {
+						"base": {
+							"type": "minecraft:uniform",
+							"min_inclusive": -1,
+							"max_exclusive": 1
+						}
+					},
+					"speed": {
+						"type": "minecraft:uniform",
+						"min_inclusive": 0.2,
+						"max_exclusive": 0.6
+					}
+				},
+				"requirements": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"can_see_sky": true
+						}
+					},
+					{
+						"condition": "minecraft:weather_check",
+						"thundering": true
+					}
+				]
+			}
 		]
 	}
 }

@@ -1,0 +1,97 @@
+{
+	"description": {
+		"translate": "enchantment.nadir.life_steal",
+		"fallback": "Life Steal"
+	},
+	"exclusive_set": [
+		"nadir:venomous",
+		"minecraft:fire_aspect"
+	],
+	"supported_items": "#minecraft:enchantable/weapon",
+	"weight": 4,
+	"max_level": 2,
+	"min_cost": {
+		"base": 12,
+		"per_level_above_first": 19
+	},
+	"max_cost": {
+		"base": 31,
+		"per_level_above_first": 18
+	},
+	"anvil_cost": 5,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:apply_mob_effect",
+					"to_apply": "minecraft:wither",
+					"min_duration": {
+						"type": "minecraft:linear",
+						"base": 8,
+						"per_level_above_first": -2
+					},
+					"max_duration": {
+						"type": "minecraft:linear",
+						"base": 8,
+						"per_level_above_first": -2
+					},
+					"min_amplifier": {
+						"type": "minecraft:linear",
+						"base": 0,
+						"per_level_above_first": 1
+					},
+					"max_amplifier": {
+						"type": "minecraft:linear",
+						"base": 0,
+						"per_level_above_first": 1
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:damage_source_properties",
+					"predicate": {
+						"is_direct": true
+					}
+				}
+			},
+			{
+				"enchanted": "attacker",
+				"affected": "attacker",
+				"effect": {
+					"type": "minecraft:apply_mob_effect",
+					"to_apply": "minecraft:regeneration",
+					"min_duration": {
+						"type": "minecraft:linear",
+						"base": 8,
+						"per_level_above_first": -2
+					},
+					"max_duration": {
+						"type": "minecraft:linear",
+						"base": 8,
+						"per_level_above_first": -2
+					},
+					"min_amplifier": {
+						"type": "minecraft:linear",
+						"base": 0,
+						"per_level_above_first": 1
+					},
+					"max_amplifier": {
+						"type": "minecraft:linear",
+						"base": 0,
+						"per_level_above_first": 1
+					}
+				},
+				"requirements": {
+					"condition": "minecraft:damage_source_properties",
+					"predicate": {
+						"is_direct": true
+					}
+				}
+			}
+		]
+	}
+}

@@ -48,6 +48,8 @@
 		"nadir:zephyr",
 		"nadir:failsafe",
 		"nadir:grip",
-		"nadir:soulbind"
+		"nadir:soulbind",
+		"nadir:life_steal",
+		"nadir:venomous"
 	]
 }

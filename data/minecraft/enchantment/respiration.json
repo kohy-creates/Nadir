@@ -2,7 +2,7 @@
 	"description": {
 		"translate": "enchantment.minecraft.respiration"
 	},
-	"supported_items": "#minecraft:enchantable/head_armor",
+	"supported_items": "#nadir:enchantable/head_and_animal",
 	"weight": 2,
 	"max_level": 3,
 	"min_cost": {
@@ -15,7 +15,7 @@
 	},
 	"anvil_cost": 4,
 	"slots": [
-		"head"
+		"body"
 	],
 	"effects": {
 		"minecraft:attributes": [

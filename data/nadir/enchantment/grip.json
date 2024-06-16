@@ -3,7 +3,7 @@
 		"translate": "enchantment.nadir.grip",
 		"fallback": "Grip"
 	},
-	"supported_items": "#minecraft:enchantable/foot_armor",
+	"supported_items": "#nadir:enchantable/foot_and_animal",
 	"weight": 5,
 	"max_level": 3,
 	"min_cost": {
@@ -16,7 +16,7 @@
 	},
 	"anvil_cost": 2,
 	"slots": [
-		"feet"
+		"body"
 	],
 	"effects": {
 		"minecraft:attributes": [

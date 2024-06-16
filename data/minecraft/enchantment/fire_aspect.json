@@ -4,7 +4,7 @@
 	},
 	"supported_items": "#minecraft:enchantable/fire_aspect",
 	"weight": 2,
-	"max_level": 2,
+	"max_level": 4,
 	"min_cost": {
 		"base": 6,
 		"per_level_above_first": 20

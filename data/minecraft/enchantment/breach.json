@@ -26,8 +26,252 @@
 					"value": {
 						"type": "minecraft:linear",
 						"base": -0.15,
-						"per_level_above_first": -0.15
+						"per_level_above_first": -0.075
 					}
+				}
+			}
+		],
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						},
+						{
+							"type": "minecraft:spawn_particles",
+							"particle": {
+								"type": "minecraft:firework"
+							},
+							"horizontal_position": {
+								"type": "in_bounding_box"
+							},
+							"vertical_position": {
+								"type": "in_bounding_box"
+							},
+							"horizontal_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"vertical_velocity": {
+								"base": {
+									"type": "minecraft:uniform",
+									"min_inclusive": -1,
+									"max_exclusive": 1
+								}
+							},
+							"speed": {
+								"type": "minecraft:uniform",
+								"min_inclusive": 0.06,
+								"max_exclusive": 0.19
+							}
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:any_of",
+					"terms": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"slots": {
+									"armor.*": {
+										"items": "#minecraft:trimmable_armor"
+									}
+								}
+							}
+						}
+					]
 				}
 			}
 		]

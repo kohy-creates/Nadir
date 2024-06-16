@@ -6,7 +6,7 @@
 	"exclusive_set": [
 		"minecraft:feather_falling"
 	],
-	"supported_items": "#minecraft:enchantable/foot_armor",
+	"supported_items": "#nadir:enchantable/foot_and_animal",
 	"weight": 5,
 	"max_level": 4,
 	"min_cost": {
@@ -19,7 +19,7 @@
 	},
 	"anvil_cost": 2,
 	"slots": [
-		"feet"
+		"body"
 	],
 	"effects": {
 		"minecraft:attributes": [
@@ -27,8 +27,8 @@
 				"attribute": "minecraft:generic.safe_fall_distance",
 				"amount": {
 					"type": "minecraft:linear",
-					"base": 2,
-					"per_level_above_first": 1
+					"base": 1.5,
+					"per_level_above_first": 0.5
 				},
 				"operation": "add_value",
 				"id": "nadir:enchantment.spring"
@@ -37,8 +37,8 @@
 				"attribute": "minecraft:generic.jump_strength",
 				"amount": {
 					"type": "minecraft:linear",
-					"base": 0.14,
-					"per_level_above_first": 0.07
+					"base": 0.12,
+					"per_level_above_first": 0.06
 				},
 				"operation": "add_value",
 				"id": "nadir:enchantment.spring"
