@@ -17,7 +17,7 @@
 	},
 	"anvil_cost": 4,
 	"slots": [
-		"body"
+		"armor"
 	],
 	"effects": {
 		"minecraft:damage_immunity": [

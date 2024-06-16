@@ -16,7 +16,7 @@
 	},
 	"anvil_cost": 2,
 	"slots": [
-		"body"
+		"armor"
 	],
 	"effects": {
 		"minecraft:damage_protection": [

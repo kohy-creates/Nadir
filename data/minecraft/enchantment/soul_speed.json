@@ -15,7 +15,7 @@
 	},
 	"anvil_cost": 8,
 	"slots": [
-		"body"
+		"armor"
 	],
 	"effects": {
 		"minecraft:location_changed": [

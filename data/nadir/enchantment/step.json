@@ -17,7 +17,7 @@
 	},
 	"anvil_cost": 6,
 	"slots": [
-		"body"
+		"armor"
 	],
 	"effects": {
 		"minecraft:attributes": [

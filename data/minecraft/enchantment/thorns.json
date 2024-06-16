@@ -15,7 +15,7 @@
 	},
 	"anvil_cost": 8,
 	"slots": [
-		"body"
+		"any"
 	],
 	"effects": {
 		"minecraft:post_attack": [
