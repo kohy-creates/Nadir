@@ -124,7 +124,7 @@ Adding different blocks to an enchanting setup can increase either of those 4 va
 
 </details>
 
-In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the iitem. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
+In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the item. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
 
 Enchanting Table block detection range has been extended upwards by 1 block to accommodate for requiring more blocks to work to its fullest potential.
 
