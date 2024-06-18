@@ -37,7 +37,7 @@ While in the enchanting mode, **4 new variables**, all of which affect the outco
 > 
 > **Max value:** 30
 
-**🔥 Quanta** - chaos, amplifies the enchanting level by +- half of of its value
+**🔥 Quanta** - chaos, amplifies the enchanting level by +- half of its value
 > **Example:** 50 Quanta would mean that its amplification potential ranges from `-25% ~ +25%`
 > 
 > **Max value:** 100%
@@ -124,7 +124,7 @@ Adding different blocks to an enchanting setup can increase either of those 4 va
 
 </details>
 
-In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the iitem. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
+In order to enchant an item, drop it on top of the Enchanting Table while in the enchanting mode and then add 1 - 3 Lapis Lazuli. After everything is prepared, right-click the `Enchant` button to consume all Lapis and enchant the item. You can always withdraw your item from the Enchanting Table by right-clicking it. Same applies to the inserted Lapis, which is now also displayed orbiting around the Table.
 
 Enchanting Table block detection range has been extended upwards by 1 block to accommodate for requiring more blocks to work to its fullest potential.
 
@@ -146,8 +146,8 @@ Additionaly, some changes general changes have been made. All treasure enchantme
 <details>
 <summary>Changes to vanilla enchantments</summary>
 
-- ⚔️ **Sharpnes** - can be applied to Tridents and Maces.
-- ⚔️ **Smite, Bane of Arhtropods** - stack with Sharpness and each other, changed damage increase to `+10% * (level + 1)` *(total of +60% at level V)*. Both enchantments can be applied to Tridents and Maces.
+- ⚔️ **Sharpness** - can be applied to Tridents and Maces.
+- ⚔️ **Smite, Bane of Arthropods** - stack with Sharpness and each other, changed damage increase to `+10% * (level + 1)` *(total of +60% at level V)*. Both enchantments can be applied to Tridents and Maces.
 - ⚔️ **Knockback** - reduced knockback by 33%.
 - ⚔️ **Sweeping Edge** - reduced enchantment efficiency.
 - 🛡️ **Protection** - reduced base damage reduction per level from +4% to +2.5% and increased max level from IV to V.
