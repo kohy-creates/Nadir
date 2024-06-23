@@ -5,7 +5,7 @@
 	},
 	"exclusive_set": [
 		"minecraft:fire_aspect",
-		"nadir:venomous"
+		"nadir:life_steal"
 	],
 	"supported_items": "#minecraft:enchantable/weapon",
 	"weight": 2,
