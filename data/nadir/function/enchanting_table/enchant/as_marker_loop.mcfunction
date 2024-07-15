@@ -14,7 +14,11 @@ execute \
 execute \
 	if entity @n[type=interaction,tag=nadir.enchanting_table,tag=nadir.in_menu,tag=!nadir.has_item] \
 	positioned ~ ~1 ~ \
-	if entity @e[type=item,distance=..0.35,tag=!nadir.ignore,nbt={Item:{count:1}},nbt=!{Item:{id:"minecraft:lapis_lazuli"}},nbt=!{Item:{components:{"minecraft:enchantments":{}}}}] run \
+	if entity @e[type=item,distance=..0.35,tag=!nadir.ignore,nbt={Item:{count:1}},\
+	nbt=!{Item:{id:"minecraft:lapis_lazuli"}},\
+	nbt=!{Item:{id:"minecraft:enchanted_book"}},\
+	nbt=!{Item:{id:"minecraft:elytra"}},\
+	nbt=!{Item:{components:{"minecraft:enchantments":{}}}}] run \
 	function nadir:enchanting_table/enchant/add_item/add
 
 execute as @e[type=interaction,distance=..1.5,tag=nadir.lapis.interaction] if data entity @s interaction at @s run function nadir:enchanting_table/enchant/add_lapis/drop_item

@@ -20,7 +20,7 @@ execute if block ~ ~ ~ #minecraft:candles[candles=4] run scoreboard players add 
 
 execute unless score #ench.dragon_egg nadir.misc matches 1.. if block ~ ~ ~ dragon_egg run function nadir:enchanting_table/enchant/scan/blocks/dragon_egg
 
-execute if block ~ ~ ~ brewing_stand run scoreboard players add @s nadir.enchanting_table.arcana 6
+execute if block ~ ~ ~ brewing_stand run scoreboard players add @s nadir.enchanting_table.arcana 5
 
 execute if block ~ ~ ~ heavy_core run function nadir:enchanting_table/enchant/scan/blocks/heavy_core
 execute unless score #ench.beacon nadir.misc matches 1.. if block ~ ~ ~ beacon run function nadir:enchanting_table/enchant/scan/blocks/beacon

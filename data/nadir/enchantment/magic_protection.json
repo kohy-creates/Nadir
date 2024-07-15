@@ -47,7 +47,7 @@
 							"predicate": {
 								"tags": [
 									{
-										"id": "minecraft:is_magic",
+										"id": "nadir:is_magic",
 										"expected": true
 									},
 									{
