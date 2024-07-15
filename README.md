@@ -4,7 +4,7 @@
 
 -------
 
-[![Discord](https://img.shields.io/discord/727033287343734885?color=7289DA&logo=discord&style=for-the-badge&logoColor=7289DA)](https://discord.kohara.xyz/)
+[![Discord](https://img.shields.io/discord/727033287343734885?color=7289DA&logo=discord&style=for-the-badge&logoColor=7289DA)](https://discord.gg/kohara)
 [![Forks](https://img.shields.io/github/forks/kohy-creates/Nadir?style=for-the-badge&logo=github&color=green)](https://github.com/kohy-creates/Nadir/members)
 [![Stars](https://img.shields.io/github/stars/kohy-creates/Nadir?style=for-the-badge&logo=github&color=yellow)](https://github.com/kohy-creates/Nadir/stargazers)
 [![Code Size](https://img.shields.io/github/languages/code-size/kohy-creates/Nadir?style=for-the-badge&color=purple&logoColor=white)](https://github.com/kohy-creates/Nadir)
