@@ -25,7 +25,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.exhaustion_curse",
-				"attribute": "minecraft:player.block_break_speed",
+				"attribute": "minecraft:block_break_speed",
 				"amount": -0.25,
 				"operation": "add_multiplied_total"
 			}

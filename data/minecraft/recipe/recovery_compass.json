@@ -7,12 +7,8 @@
 		"SSS"
 	],
 	"key": {
-		"C": {
-			"item": "minecraft:compass"
-		},
-		"S": {
-			"item": "minecraft:echo_shard"
-		}
+		"C": "minecraft:compass",
+		"S": "minecraft:echo_shard"
 	},
 	"result": {
 		"id": "minecraft:recovery_compass",

@@ -21,7 +21,7 @@
 	"effects": {
 		"minecraft:attributes": [
 			{
-				"attribute": "minecraft:generic.water_movement_efficiency",
+				"attribute": "minecraft:water_movement_efficiency",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 0.2,

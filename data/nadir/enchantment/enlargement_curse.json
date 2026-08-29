@@ -22,25 +22,25 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:player.block_interaction_range",
+				"attribute": "minecraft:block_interaction_range",
 				"amount": 1.5,
 				"operation": "add_value"
 			},
 			{
 				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:player.entity_interaction_range",
+				"attribute": "minecraft:entity_interaction_range",
 				"amount": 1.5,
 				"operation": "add_value"
 			},
 			{
 				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:player.block_break_speed",
+				"attribute": "minecraft:block_break_speed",
 				"amount": -0.4,
 				"operation": "add_multiplied_total"
 			},
 			{
 				"id": "nadir:enchantment.enlargement_curse",
-				"attribute": "minecraft:generic.attack_speed",
+				"attribute": "minecraft:attack_speed",
 				"amount": -0.4,
 				"operation": "add_multiplied_total"
 			}

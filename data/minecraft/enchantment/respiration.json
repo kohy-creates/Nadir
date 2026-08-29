@@ -21,7 +21,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "minecraft:enchantment.respiration",
-				"attribute": "minecraft:generic.oxygen_bonus",
+				"attribute": "minecraft:oxygen_bonus",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 1,

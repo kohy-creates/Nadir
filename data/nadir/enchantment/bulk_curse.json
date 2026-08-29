@@ -22,13 +22,13 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.bulk_curse",
-				"attribute": "minecraft:generic.movement_speed",
+				"attribute": "minecraft:movement_speed",
 				"amount": -0.15,
 				"operation": "add_multiplied_total"
 			},
 			{
 				"id": "nadir:enchantment.bulk_curse",
-				"attribute": "minecraft:generic.armor",
+				"attribute": "minecraft:armor",
 				"amount": 1,
 				"operation": "add_value"
 			}

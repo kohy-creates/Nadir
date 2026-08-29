@@ -60,7 +60,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantments.wind_burst",
-				"attribute": "minecraft:generic.explosion_knockback_resistance",
+				"attribute": "minecraft:explosion_knockback_resistance",
 				"amount": -1,
 				"operation": "add_multiplied_total"
 			}

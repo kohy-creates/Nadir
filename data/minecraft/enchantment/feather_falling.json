@@ -21,7 +21,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "minecraft:enchantment.feather_falling",
-				"attribute": "minecraft:generic.fall_damage_multiplier",
+				"attribute": "minecraft:fall_damage_multiplier",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": -0.1,
@@ -31,7 +31,7 @@
 			},
 			{
 				"id": "minecraft:enchantment.feather_falling",
-				"attribute": "minecraft:generic.safe_fall_distance",
+				"attribute": "minecraft:safe_fall_distance",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 3,

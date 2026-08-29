@@ -22,7 +22,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.reach",
-				"attribute": "minecraft:player.block_interaction_range",
+				"attribute": "minecraft:block_interaction_range",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 1,

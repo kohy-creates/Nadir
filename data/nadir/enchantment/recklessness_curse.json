@@ -25,7 +25,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.recklessness_curse",
-				"attribute": "minecraft:generic.fall_damage_multiplier",
+				"attribute": "minecraft:fall_damage_multiplier",
 				"amount": 0.4,
 				"operation": "add_multiplied_total"
 			}

@@ -22,7 +22,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.flow",
-				"attribute": "minecraft:generic.water_movement_efficiency",
+				"attribute": "minecraft:water_movement_efficiency",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 0.3,

@@ -22,7 +22,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.grip",
-				"attribute": "minecraft:generic.knockback_resistance",
+				"attribute": "minecraft:knockback_resistance",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 0.15,

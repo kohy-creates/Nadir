@@ -13,7 +13,7 @@
 			"translate": "advancements.nadir.root.description",
 			"fallback": "Add a little bit of magic to your world"
 		},
-		"background": "minecraft:textures/block/obsidian.png",
+		"background": "minecraft:block/obsidian",
 		"frame": "task",
 		"show_toast": false,
 		"announce_to_chat": false,

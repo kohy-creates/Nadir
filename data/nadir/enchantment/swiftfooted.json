@@ -22,7 +22,7 @@
 		"minecraft:attributes": [
 			{
 				"id": "nadir:enchantment.swiftfooted",
-				"attribute": "minecraft:generic.movement_speed",
+				"attribute": "minecraft:movement_speed",
 				"amount": {
 					"type": "minecraft:linear",
 					"base": 0.05,
